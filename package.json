@@ -1,0 +1,24 @@
+{
+  "name": "sass-Practicing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon index",
+    "start": "npm-run-all -p \"npm run watch\" \"npm run sass\"",
+    "sass": "node-sass -w -o views/Css views/sass"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12"
+  }
+}
